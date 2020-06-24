@@ -3,8 +3,8 @@ from django.db import models
 
 class Customer(models.Model):
     name = models.CharField(max_length=100)
-    email = models.EmailField(max_length=100)
-    mobile = models.BigIntegerField()
+    email = models.EmailField(max_length=100, default="customer@gmail.com")
+    mobile = models.BigIntegerField(default=9066371333)
     # password = models.PasswordField(max_length=100)
     address = models.CharField(max_length=100)
 
