@@ -8,7 +8,7 @@ class Vendor(models.Model):
     email = models.EmailField(max_length=100, blank=True, null=True, default=9066371333)
     address = models.CharField(max_length=100, blank=True, null=True, default="hyd")
 
-
+    file = models.FileField(upload_to='file/', null=True, blank=True, )
 
     def __str__(self):
         return self.name
@@ -22,6 +22,7 @@ class Products(models.Model):
     description = models.TextField(blank=True, null=True)
     stock = models.BigIntegerField()
     image = models.ImageField(null=True, blank=True, upload_to="media/")
+
 
     def __str__(self):
         return self.name_of_product
@@ -38,7 +39,6 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.name
-
 
 
 class ServiceUplode(models.Model):
