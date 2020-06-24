@@ -1,15 +1,6 @@
 from django.db import models
 
 
-class Customer(models.Model):
-    user = models.ForeignKey("auth.User",on_delete=models.CASCADE)
-    name = models.CharField(max_length=100)
-    email = models.EmailField(max_length=100, default="customer@gmail.com")
-    mobile = models.BigIntegerField(default=9066371333)
-    # password = models.PasswordField(max_length=100)
-    address = models.CharField(max_length=100)
-
-
 class Vendor(models.Model):
     name = models.CharField(max_length=100, blank=True, null=True, default='vendor')
     mobile = models.BigIntegerField()
@@ -33,8 +24,19 @@ class Products(models.Model):
         return self.name_of_product
 
 
+class Customer(models.Model):
+    order = models.ManyToManyField(Products, blank=True, )
+    user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    name = models.CharField(max_length=100)
+    email = models.EmailField(max_length=100, default="customer@gmail.com")
+    mobile = models.BigIntegerField(default=9066371333)
+    # password = models.PasswordField(max_length=100)
+    address = models.CharField(max_length=100)
+
+
 class ServiceUplode(models.Model):
     pass
+
 
 class ServiceAssign(models.Model):
     pass
