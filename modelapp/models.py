@@ -1,3 +1,4 @@
+from django.contrib.auth.models import User
 from django.db import models
 
 
@@ -26,12 +27,16 @@ class Products(models.Model):
 
 class Customer(models.Model):
     order = models.ManyToManyField(Products, blank=True, )
-    user = models.ForeignKey("auth.User", on_delete=models.CASCADE)
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=100, default="customer@gmail.com")
     mobile = models.BigIntegerField(default=9066371333)
     # password = models.PasswordField(max_length=100)
     address = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.name
+
 
 
 class ServiceUplode(models.Model):
