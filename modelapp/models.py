@@ -31,3 +31,10 @@ class Products(models.Model):
 
     def __str__(self):
         return self.name_of_product
+
+
+class ServiceUplode(models.Model):
+    pass
+
+class ServiceAssign(models.Model):
+    pass
