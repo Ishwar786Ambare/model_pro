@@ -1,6 +1,4 @@
 from django.db import models
-from datetime import datetime as dt
-
 
 
 class Customer(models.Model):
@@ -19,6 +17,7 @@ class Vendor(models.Model):
 
 
 class Products(models.Model):
+    models.ForeignKey(Vendor, on_delete=models.CASCADE, )
     name = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=10, decimal_places=3, default=0, blank=True, null=True)
     weight = models.DecimalField(max_digits=100, decimal_places=3, default=0, blank=True, null=True)
