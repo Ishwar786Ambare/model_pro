@@ -11,3 +11,12 @@ pip install django-phonenumber-field
 for uploading image
 <------------------>
 https://simpleisbetterthancomplex.com/tutorial/2016/08/01/how-to-upload-files-with-django.html
+
+
+<------------------>
+user name and password
+<------------------>
+user --> ishwar
+models --> hilufw87382
+naresh --> bfjsd7888
+pratik --> gff78h37fg

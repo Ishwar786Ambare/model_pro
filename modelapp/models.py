@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Customer(models.Model):
+    user = models.ForeignKey("auth.User",on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=100, default="customer@gmail.com")
     mobile = models.BigIntegerField(default=9066371333)
