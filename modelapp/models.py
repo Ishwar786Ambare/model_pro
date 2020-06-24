@@ -2,8 +2,6 @@ from django.db import models
 from datetime import datetime as dt
 
 
-
-
 class Common(models.Model):
     name = models.CharField(max_length=100)
 
@@ -32,7 +30,6 @@ class Vendor(models.Model):
     name = models.CharField(max_length=100)
 
 
-
 class Product(models.Model):
     v_p = models.ForeignKey(Vendor, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
@@ -41,7 +38,6 @@ class Product(models.Model):
     # date = models.DateTimeField(auto_now_add=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
 
 
 class Customer(models.Model):
