@@ -12,13 +12,16 @@ class Customer(models.Model):
 class Vendor(models.Model):
     name = models.CharField(max_length=100, blank=True, null=True, default='vendor')
     mobile = models.BigIntegerField()
-    email = models.EmailField(max_length=100, blank=True, null=True)
-    address = models.CharField(max_length=100, blank=True, null=True)
+    email = models.EmailField(max_length=100, blank=True, null=True, default=9066371333)
+    address = models.CharField(max_length=100, blank=True, null=True, default="hyd")
+
+    def __str__(self):
+        return self.name
 
 
 class Products(models.Model):
-    models.ForeignKey(Vendor, on_delete=models.CASCADE, )
-    name = models.CharField(max_length=100)
+    PtoV = models.ForeignKey(Vendor, on_delete=models.CASCADE, )
+    name_of_product = models.CharField(max_length=100)
     price = models.DecimalField(max_digits=10, decimal_places=3, default=0, blank=True, null=True)
     weight = models.DecimalField(max_digits=100, decimal_places=3, default=0, blank=True, null=True)
     description = models.TextField(blank=True, null=True)
@@ -26,4 +29,4 @@ class Products(models.Model):
     image = models.ImageField(null=True, blank=True, upload_to="media/")
 
     def __str__(self):
-        return self.name
+        return self.name_of_product
