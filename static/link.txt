@@ -21,9 +21,16 @@ naresh --> bfjsd7888
 pratik --> gff78h37fg
 <------------------>
 
+
+
+
 <------------------>
 user name and password
 <------------------>
-
 ishwarambare@gmail.com
 abcde12345
+
+<------------------>
+email sending functionality
+<------------------>
+https://simpleisbetterthancomplex.com/tutorial/2016/06/13/how-to-send-email.html

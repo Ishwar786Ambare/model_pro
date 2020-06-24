@@ -132,3 +132,14 @@ EMAIL_HOST_PASSWORD = 'SG.MD0taGY1TBme7ZYL5jI2zw.TVyUFXFYMToYfUxHoJDTIs-nNEAmRM_
 EMAIL_PORT = 465
 EMAIL_USE_TLS = True
 
+
+# mail sending function here
+
+'''
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'parsifal_app'
+EMAIL_HOST_PASSWORD = 'mys3cr3tp4ssw0rd'
+EMAIL_USE_TLS = True
+'''
+
