@@ -143,3 +143,4 @@ EMAIL_HOST_PASSWORD = 'mys3cr3tp4ssw0rd'
 EMAIL_USE_TLS = True
 '''
 
+

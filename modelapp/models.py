@@ -8,6 +8,8 @@ class Vendor(models.Model):
     email = models.EmailField(max_length=100, blank=True, null=True, default=9066371333)
     address = models.CharField(max_length=100, blank=True, null=True, default="hyd")
 
+
+
     def __str__(self):
         return self.name
 

@@ -18,6 +18,7 @@ def current_page(request):
 
 
 def mailsend(request):
-    send_mail("this is ishwar mail", "takecare of your self be safe", "ishwarambare@hotmail.com",
-              ['ishwarambare@hotmail.com','ishwarambare@gmail.com'],fail_silently=False)
+    # send_mail("this is ishwar mail", "takecare of your self be safe", "ishwarambare@hotmail.com",
+    #           ['ishwarambare@hotmail.com','ishwarambare@gmail.com'],fail_silently=False)
+    
     return HttpResponse("mail_will_be_send")
