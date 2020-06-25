@@ -23,7 +23,6 @@ class Products(models.Model):
     stock = models.BigIntegerField()
     image = models.ImageField(null=True, blank=True, upload_to="media/")
 
-
     def __str__(self):
         return self.name_of_product
 
@@ -39,6 +38,7 @@ class Customer(models.Model):
 
     def __str__(self):
         return self.name
+
 
 
 class ServiceUplode(models.Model):
