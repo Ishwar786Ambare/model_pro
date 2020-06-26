@@ -24,11 +24,13 @@ pratik --> gff78h37fg
 
 
 
+
 <------------------>
 user name and password
 <------------------>
 ishwarambare@gmail.com
 abcde12345
+
 
 <------------------>
 email sending functionality
@@ -36,8 +38,24 @@ email sending functionality
 
 https://simpleisbetterthancomplex.com/tutorial/2016/06/13/how-to-send-email.html
 
+
 <------------------>
 DJANGO COOK BOOK -> LOOK LIKE EXCELLENT
 <------------------>
+
 https://books.agiliq.com/projects/django-admin-cookbook/en/latest/override_default_templates.html
 
+
+<------------------>
+CRM
+<------------------>
+
+
+https://www.cas-crm.com/crm-its-benefits/crm-topics.html   #ALL TOPICS
+sales force #var jane
+
+<------------------>
+CRM
+<------------------>
+
+https://docs.wclovers.com/store-shipping/
