@@ -55,7 +55,7 @@ https://www.cas-crm.com/crm-its-benefits/crm-topics.html   #ALL TOPICS
 sales force #var jane
 
 <------------------>
-store for vendor read this ones
+store for vendor read this onesa
 <------------------>
 
 https://docs.wclovers.com/store-shipping/
